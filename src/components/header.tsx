@@ -6,14 +6,15 @@ import React from "react";
 
 const linkData = [
   { name: "Performance", path: "/performance" },
-  { name: "Dashboard", path: "/dashboard" },
+  { name: "Reliability", path: "/reliability" },
+  // { name: "Dashboard", path: "/dashboard" },
   { name: "Scale", path: "/scale" },
 ];
 export default function header() {
   const pathName = usePathname();
   return (
     <div className="absolute w-full z-10">
-      <div className="flex justify-between  container mx-auto text-white p-8">
+      <div className="flex justify-between items-center container mx-auto text-white p-8">
         <Link href={"/"} className="text-3xl font-bold">
           Home
         </Link>
