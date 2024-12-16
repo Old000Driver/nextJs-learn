@@ -1,4 +1,11 @@
 import "./globals.css";
+import { Comforter } from "next/font/google";
+
+// If loading a variable font, you don't need to specify the font weight
+const comforter = Comforter({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export const metadata = {
   title: "Next.js",
@@ -12,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={comforter.className}>
         {/* 字体颜色为白色 */}
         {children}
       </body>
