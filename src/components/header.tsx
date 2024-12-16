@@ -11,7 +11,7 @@ const linkData = [
   { name: "Scale", path: "/scale" },
 ];
 
-export default function header() {
+export default function Header() {
   const pathName = usePathname();
   return (
     <div className="absolute w-full z-10">
