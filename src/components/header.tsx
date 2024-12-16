@@ -10,6 +10,7 @@ const linkData = [
   // { name: "Dashboard", path: "/dashboard" },
   { name: "Scale", path: "/scale" },
 ];
+
 export default function header() {
   const pathName = usePathname();
   return (

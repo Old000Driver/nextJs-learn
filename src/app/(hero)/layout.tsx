@@ -1,4 +1,4 @@
-import "./globals.css";
+import Header from "@/components/header";
 
 export const metadata = {
   title: "Next.js",
@@ -14,6 +14,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {/* 字体颜色为白色 */}
+        <Header />
         {children}
       </body>
     </html>
